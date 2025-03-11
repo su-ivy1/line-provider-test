@@ -1,0 +1,42 @@
+# NextAuthとLINE Providerを使った認証機能の実装タスク
+
+## 依存関係のインストール
+- [x] next-auth パッケージのインストール
+- [x] 必要な型定義のインストール
+
+## 環境設定
+- [x] .env.local ファイルの作成
+- [x] LINE Developer Console でのアプリ設定（実際の実装時に行う）
+- [x] コールバックURLの設定（実際の実装時に行う）
+
+## NextAuth設定
+- [x] API ルートの作成 (src/app/api/auth/[...nextauth]/route.ts)
+- [x] LINE Provider の設定
+- [x] セッションとJWTのコールバック設定
+- [x] 型拡張の設定
+
+## 認証ページの実装
+- [x] サインインページの作成 (src/app/auth/signin/page.tsx)
+- [x] サインアウトページの作成 (src/app/auth/signout/page.tsx)
+- [x] エラーページの作成 (src/app/auth/error/page.tsx)
+
+## 保護されたコンテンツの実装
+- [x] 保護されたページの作成 (src/app/protected/page.tsx)
+- [x] ミドルウェアの設定 (src/middleware.ts)
+
+## UI実装
+- [x] ホームページの更新 (src/app/page.tsx)
+- [x] レイアウトへのSessionProviderの追加 (src/app/layout.tsx)
+
+## テスト
+- [ ] LINE Developer Consoleでの設定確認
+- [ ] ログインフローのテスト
+- [ ] セッション維持のテスト
+- [ ] ログアウトフローのテスト
+- [ ] 保護されたページへのアクセス制限テスト
+
+## 残りのタスク
+- [ ] 実際のLINE Developer Consoleでのアプリ登録
+- [ ] チャネルIDとシークレットの取得
+- [ ] .env.localファイルの更新
+- [ ] 本番環境用の設定
